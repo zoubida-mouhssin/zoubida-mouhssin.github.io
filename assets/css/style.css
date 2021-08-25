@@ -1,0 +1,249 @@
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 0px;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: none; 
+
+}
+
+
+/* Index style */
+
+.fond{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url("../img/img.jpg") no-repeat center fixed; 
+  background-size: cover;
+
+ height: 100vh;
+}
+
+#presentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  
+}
+
+/* Index fin */
+
+/* Fond pages */
+
+.fond-vous{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55), 
+    rgba(136, 113, 113, 0.55)
+  ), url("../img/img2.jpg") no-repeat bottom fixed; 
+  background-size: cover;
+    height: 40vh;
+}
+
+
+/* Navbar style */
+ul li .navlink.active {
+  background-color: blue;
+    font-weight: bold;
+    color: red;
+  }
+
+  .navbar{
+    display: flex;
+    
+  }
+  .nav-link{
+    color: black;
+  }
+  .collapse{
+    justify-content: flex-end;
+
+  }
+/* Vous Page */
+.vous{
+    padding: 10vh 0vh;
+    width: 90vh;
+    animation: transitionIn 1.5s;
+}
+.gras{
+  font-weight: bolder;
+}
+.vous-travail{
+  text-align: center;
+  font-weight: bold;
+}
+.vous-travail span{
+  font-weight: bolder;
+}
+.alors{
+  text-decoration: underline;
+}
+/* Contact Page */
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+.contacter{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+#contact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5vh;
+  background-color:r;
+}
+.link-contact{
+  text-decoration: none;
+  color: black;
+}
+
+#contact h3{
+  padding: 2vh 0vh;
+}
+
+.contact-button{
+  color: black;
+  text-decoration: none;
+}
+
+.contact-button:hover{
+  color: black;
+  border-bottom:10px solid black;
+}
+
+
+/* Footer page */
+
+#footer{
+    background-color: grey;
+    height: 20vh;
+}
+
+
+.title-vous{
+  text-align: center;
+  padding: 70px 0;
+
+}
+
+.citation{
+  text-align: center;
+  font-style: italic;
+}
+button{
+background-color: transparent;
+  border: none;
+  color: white;
+  text-align : center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:RGBA(34,43,18,0.82);
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:white;
+  text-decoration:none;
+  opacity:0.8;
+
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+i{
+  color: white;
+}
+
+
+
+
+
+/* Aniation texte */
+
+@keyframes transitionIn {
+  
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+    top: 0%;
+    
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+    top: 100%;
+  }
+}
+.text-home{
+  animation: transitionIn 1.5s;
+}
+.sous-titre{
+  text-align: center;
+  font-size: 15px;
+  
+}
+.sous-titre p {
+  font-size: 11.5px;
+  color: white;
+}
