@@ -65,9 +65,9 @@ ul li .navlink.active {
   }
 /* Vous Page */
 .vous{
-    padding: 10vh 0vh;
-    width: 90vh;
-    animation: transitionIn 1.5s;
+  padding: 10vh 0vh;
+  width: auto;
+  animation: transitionIn 1.5s;
 }
 .gras{
   font-weight: bolder;
@@ -246,4 +246,13 @@ i{
 .sous-titre p {
   font-size: 11.5px;
   color: white;
+}
+
+
+@media screen and (min-width: 600px) {
+  .vous{
+    padding: 10vh 0vh;
+    width: 90vh;
+    animation: transitionIn 1.5s;
+}
 }
