@@ -87,6 +87,7 @@ ul li .navlink.active {
   display: flex;
   justify-content: center;
   flex-direction: row;
+
   
 }
 .contacter{
@@ -254,5 +255,11 @@ i{
     padding: 10vh 0vh;
     width: 90vh;
     animation: transitionIn 1.5s;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
 }
 }
