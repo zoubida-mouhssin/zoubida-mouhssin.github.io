@@ -30,8 +30,8 @@ body{
   justify-content: center;
   align-items: center;
   height: 92vh;
-  
 }
+
 
 /* Index fin */
 
@@ -267,8 +267,11 @@ i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 91vh;
   
+}
+#presentation h1{
+  padding: 35vh 0vh 0vh 0vh;
 }
 .citation{
   padding:0px 1vh;
@@ -298,4 +301,7 @@ i{
   bottom: 0;
   left: 0%;
   border-bottom: 1px solid black;
+}
+.list-inline-item a{
+  font-size: 15px;
 }
