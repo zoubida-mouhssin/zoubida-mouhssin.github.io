@@ -9,7 +9,9 @@
 
 }
 
-
+body{
+  background-color: beige;
+}
 /* Index style */
 
 .fond{
@@ -19,7 +21,7 @@
   ), url("../img/img.jpg") no-repeat center fixed; 
   background-size: cover;
 
- height: 100vh;
+ height: max-content;
 }
 
 #presentation{
@@ -27,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 92vh;
   
 }
 
@@ -65,9 +67,10 @@ ul li .navlink.active {
   }
 /* Vous Page */
 .vous{
-  padding: 10vh 0vh;
-  width: auto;
-  animation: transitionIn 1.5s;
+    
+    padding: 10vh 0vh;
+    width: 90vh;
+    animation: transitionIn 1.5s;
 }
 .gras{
   font-weight: bolder;
@@ -87,20 +90,20 @@ ul li .navlink.active {
   display: flex;
   justify-content: center;
   flex-direction: row;
-
+  
   
 }
 .contacter{
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+
 }
 #contact{
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 5vh;
-  background-color:r;
 }
 .link-contact{
   text-decoration: none;
@@ -139,6 +142,7 @@ ul li .navlink.active {
 .citation{
   text-align: center;
   font-style: italic;
+  font-size: 25px;
 }
 button{
 background-color: transparent;
@@ -251,17 +255,47 @@ i{
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .vous{
-    padding: 10vh 0vh;
-    width: 90vh;
+    padding: 10vh 2vh;
+    width: auto;
     animation: transitionIn 1.5s;
+    font-size: 12px;
 }
-.contacter{
+#presentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   
- 
+}
+.citation{
+  padding:0px 1vh;
+}
+.fond-vous{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55), 
+    rgba(136, 113, 113, 0.55)
+  ), url("../img/img2.jpg") no-repeat center fixed; 
+  background-size: cover;
+    height: 40vh;
 }
 }
 .svg{
   fill: #27ae60;
+}
+.formation{
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+.formation::before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 1px solid black;
 }
