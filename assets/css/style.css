@@ -56,6 +56,9 @@ ul li .navlink.active {
 
   .navbar{
     display: flex;
+    position: absolute;
+    margin-left: 10vh;
+
     
   }
   .nav-link{
@@ -134,10 +137,14 @@ ul li .navlink.active {
 
 
 .title-vous{
-  text-align: center;
-  padding: 70px 0;
-
+  color: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: fit-content;
+  margin: 0px 0px;
 }
+
 
 .citation{
   text-align: center;
@@ -256,6 +263,7 @@ i{
 
 
 @media screen and (max-width: 600px) {
+  .navbar{margin-left: 0px;}
   .vous{
     padding: 10vh 2vh;
     width: auto;
@@ -290,7 +298,7 @@ i{
 }
 .formation{
   display: inline-block;
-  padding-bottom: 5px;
+  margin:4.5vh 0vh;
   position: relative;
 }
 .formation::before{
