@@ -6,12 +6,16 @@
 }
 ::-webkit-scrollbar-thumb {
   background: none; 
-
 }
 
 body{
-  background-color: beige;
+  background-color: beige;  
+  font-family: 'Oswald', sans-serif;
 }
+
+
+
+
 /* Index style */
 
 .fond{
@@ -35,6 +39,10 @@ body{
 
 /* Index fin */
 
+
+
+
+
 /* Fond pages */
 
 .fond-vous{
@@ -55,11 +63,11 @@ ul li .navlink.active {
   }
 
   .navbar{
+    width: 100%;
     display: flex;
-    position: absolute;
-    margin-left: 10vh;
+    justify-content: space-around;
 
-    
+
   }
   .nav-link{
     color: black;
@@ -71,7 +79,7 @@ ul li .navlink.active {
 /* Vous Page */
 .vous{
     
-    padding: 10vh 0vh;
+    padding: 5vh 0vh;
     width: 90vh;
     animation: transitionIn 1.5s;
 }
@@ -88,13 +96,23 @@ ul li .navlink.active {
 .alors{
   text-decoration: underline;
 }
+
+
+
+
 /* Contact Page */
 .contact{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  
-  
+}
+.vous-contact{
+    
+  padding: 5vh 0vh;
+  width: 90vh;
+  animation: transitionIn 1.5s;
+  display: flex;
+  justify-content: center;
 }
 .contacter{
   flex-direction: column;
@@ -142,7 +160,6 @@ ul li .navlink.active {
   left: 50%;
   top: 50%;
   width: fit-content;
-  margin: 0px 0px;
 }
 
 
@@ -263,21 +280,30 @@ i{
 
 
 @media screen and (max-width: 600px) {
-  .navbar{margin-left: 0px;}
+  .navbar{
+    left: 0%;
+  }
   .vous{
     padding: 10vh 2vh;
     width: auto;
     animation: transitionIn 1.5s;
     font-size: 12px;
 }
-#presentation{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 91vh;
-  
+
+.vous-contact{
+  margin: 5vh 2vh;
+  width: auto;
+  animation: transitionIn 1.5s;
+  font-size: 12px;
 }
+iframe{
+  width: auto;
+  height: 50vh;
+}
+.contacter{
+  width: auto;
+}
+
 #presentation h1{
   padding: 35vh 0vh 0vh 0vh;
 }
